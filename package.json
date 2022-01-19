@@ -4,5 +4,15 @@
   "description": "boilerplate for create micro services",
   "main": "dist/index.js",
   "author": "Eric Silva",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.3",
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.2.1"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  }
 }
