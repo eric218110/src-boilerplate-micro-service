@@ -1,0 +1,8 @@
+{
+  "name": "src-boilerplate-micro-service",
+  "version": "1.0.0",
+  "description": "boilerplate for create micro services",
+  "main": "dist/index.js",
+  "author": "Eric Silva",
+  "license": "MIT"
+}
