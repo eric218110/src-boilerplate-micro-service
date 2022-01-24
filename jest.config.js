@@ -6,9 +6,10 @@ module.exports = {
   clearMocks: true,
   collectCoverageFrom: [
     '<rootDir>/src/**/*.ts',
-    '!<rootDir>/src/**/*-.controller.ts',
     '!<rootDir>/src/**/*-.module.ts',
-    '!<rootDir>/src/main/*.ts'
+    '!<rootDir>/src/main/**/*.ts',
+    '!<rootDir>/src/domain/**/*.ts',
+    '!<rootDir>/src/module/**/*.ts'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
