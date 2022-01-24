@@ -31,5 +31,16 @@ describe('ShowDogsController', () => {
 
       expect(spyShowDogs).toHaveBeenCalledTimes(1)
     })
+
+    it('should ShowDogsProvider return exception if throws', async () => {
+      const { sut, showDogsProviderStub } = makeSut()
+      jest
+        .spyOn(showDogsProviderStub, 'showDogs')
+        .mockRejectedValue(new Error('any error'))
+
+      const result = sut.handler()
+
+      expect(result).rejects.toThrow()
+    })
   })
 })
