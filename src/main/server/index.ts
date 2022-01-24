@@ -1,3 +1,8 @@
-import { Fo } from '@presentation/index'
+import { AppModule } from '@module/app'
+import { NestFactory } from '@nestjs/core'
 
-console.log(Fo)
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule)
+  await app.listen(3000)
+}
+bootstrap()
