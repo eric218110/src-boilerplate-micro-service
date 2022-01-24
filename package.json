@@ -11,6 +11,7 @@
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:watch": "npm run test -- --watch",
     "test:watch:verbose": "jest --watch -c jest-unit-config.js --runInBand --detectOpenHandles",
+    "test:staged": "npm test -- --findRelatedTests",
     "pretest:ci": "rimraf coverage",
     "test:ci": "npm test -- --coverage",
     "lint": "eslint --ext .js,.ts --fix .",
