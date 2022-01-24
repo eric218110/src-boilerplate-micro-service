@@ -16,6 +16,15 @@
       ],
       "@presentation/*": [
         "./presentation/*"
+      ],
+      "@module/*": [
+        "./module/*"
+      ],
+      "@domain/*": [
+        "./domain/*"
+      ],
+      "@data/*": [
+        "./data/*"
       ]
     }
   },
