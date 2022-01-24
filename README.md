@@ -1,8 +1,9 @@
 # src-boilerplate-micro-service
 
+[![CI](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml/badge.svg)](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml)
 [![score](https://api.codiga.io/project/30777/score/svg)](https://app.codiga.io/public/project/30777/src-boilerplate-micro-service/dashboard)
 [![status](https://api.codiga.io/project/30777/status/svg)](https://app.codiga.io/public/project/30777/src-boilerplate-micro-service/dashboard)
-[![CI](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml/badge.svg)](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml)
+[![Coverage Status](https://coveralls.io/repos/github/eric218110/src-boilerplate-micro-service/badge.svg?branch=main)](https://coveralls.io/github/eric218110/src-boilerplate-micro-service?branch=main)
 
 ## Installation
 
