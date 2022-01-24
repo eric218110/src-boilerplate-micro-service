@@ -8,9 +8,11 @@ datasource db {
 }
 
 model Dog {
-  id    Int    @id @default(autoincrement())
-  name  String
-  breed String
+  id        Int      @id @default(autoincrement())
+  name      String
+  breed     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@map("dogs")
 }
