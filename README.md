@@ -1,7 +1,8 @@
 # src-boilerplate-micro-service
 
-![alt](https://api.codiga.io/project/30777/score/svg)
-![alt](https://api.codiga.io/project/30777/status/svg)
+[![score](https://api.codiga.io/project/30777/score/svg)](https://app.codiga.io/public/project/30777/src-boilerplate-micro-service/dashboard)
+[![status](https://api.codiga.io/project/30777/status/svg)](https://app.codiga.io/public/project/30777/src-boilerplate-micro-service/dashboard)
+[![CI](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml/badge.svg)](https://github.com/eric218110/src-boilerplate-micro-service/actions/workflows/main.yml)
 
 ## Installation
 
