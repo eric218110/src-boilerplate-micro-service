@@ -9,7 +9,8 @@ module.exports = {
     '!<rootDir>/src/**/*-.module.ts',
     '!<rootDir>/src/main/**/*.ts',
     '!<rootDir>/src/domain/**/*.ts',
-    '!<rootDir>/src/module/**/*.ts'
+    '!<rootDir>/src/module/**/*.ts',
+    '!<rootDir>/src/infra/prisma/__test__/**/*.ts'
   ],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
