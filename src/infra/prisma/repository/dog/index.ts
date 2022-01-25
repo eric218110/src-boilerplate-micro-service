@@ -1,17 +1,13 @@
-import { LoadDogsRepository, DogModelResult } from '@data/protocols/dogs/show'
-import { PrismaClient } from '@prisma/client'
+import { DogModelResult, LoadDogsRepository } from '@data/protocols/dogs/show'
+import { prismaClient } from '@infra/prisma/client'
 
 export class DogRepositoryPrisma implements LoadDogsRepository {
-  private readonly prisma: PrismaClient
-
-  constructor() {
-    this.prisma = new PrismaClient()
-  }
+  constructor() {}
 
   async onLoadDogs(): Promise<DogModelResult[]> {
-    const dogList = await this.prisma.dog.findMany()
+    const client = prismaClient
 
-    await this.prisma.$disconnect()
+    const dogList = await client.dog.findMany()
     return dogList
   }
 }

@@ -10,7 +10,7 @@
     "pre-commit": "lint-staged",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:watch": "npm run test -- --watch",
-    "test:watch:verbose": "jest --watch -c jest-unit-config.js --runInBand --detectOpenHandles",
+    "test:watch:verbose": "jest --passWithNoTests --noStackTrace --runInBand --watch",
     "test:staged": "npm test -- --findRelatedTests",
     "pretest:ci": "rimraf coverage",
     "lint": "eslint --ext .js,.ts --fix .",
@@ -47,6 +47,7 @@
     "eslint-plugin-promise": "^5.2.0",
     "husky": "^7.0.0",
     "jest": "^27.4.7",
+    "jest-mock-extended": "^2.0.4",
     "lint-staged": "^12.2.1",
     "prettier": "^2.5.1",
     "prisma": "^3.8.1",
@@ -54,10 +55,11 @@
     "ts-node-dev": "^1.1.8"
   },
   "dependencies": {
-    "@prisma/client": "3.8.1",
     "@nestjs/common": "^8.2.6",
     "@nestjs/core": "^8.2.6",
     "@nestjs/platform-express": "^8.2.6",
+    "@prisma/client": "3.8.1",
+    "dotenv": "^14.3.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.2",
     "spinnies": "^0.5.1"

@@ -10,6 +10,7 @@
     "strict": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictNullChecks": true,
     "paths": {
       "@main/*": [
         "./main/*"
@@ -25,6 +26,9 @@
       ],
       "@data/*": [
         "./data/*"
+      ],
+      "@infra/*": [
+        "./infra/*"
       ]
     }
   },
